@@ -21,6 +21,7 @@ float f4(float x, int intensity);
 int main (int argc, char* argv[]) {
 
     auto t1 = std::chrono::high_resolution_clock::now();
+    
 
   int functionid;
   std::cin >> functionid;
@@ -32,15 +33,26 @@ int main (int argc, char* argv[]) {
   std::cin >> n;
   int intensity;
   std::cin >> intensity;
+
   
 
   if (argc < 6) {
     std::cerr<<"usage: "<<argv[0]<<" <functionid> <a> <b> <n> <intensity>"<<std::endl;
     return -1;
+   
   }
 
+ 
+  int value = 0, temp = 0;
   if(functionid == 1)
-    f1(n, intensity);
+    /* for(int i =n ; i >0; i--){
+      temp += i;
+    }
+  
+     ((b-a)/n)(temp)(a+(
+
+     ( f1(n, intensity); */
+    ;
   else if(functionid == 2)
     f2(n, intensity);
   else if(functionid == 3)
